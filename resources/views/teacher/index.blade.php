@@ -25,7 +25,7 @@
 				@endif
 
 			<div class="card-body">
-				<h2>All Staff</h2>
+				<h2>All Teacher</h2>
 				<table class="table table-striped">
 					<thead>
 						<tr>
@@ -53,9 +53,9 @@
 							<td>{{$staff -> photo}}</td>
 							<td><img src="assets/media/img/pp_photo/istockphoto-615279718-612x612.jpg" alt=""></td>
 							<td>
-								<a class="btn btn-sm btn-info" href="{{route('staff.show', $staff -> id)}}">View</a>
+								<a class="btn btn-sm btn-info" href="{{route('teacher.show', $staff -> id)}}">View</a>
 								<a class="btn btn-sm btn-warning" href="#">Edit</a>
-								<a class="btn btn-sm btn-danger" href="{{route('staff.delete', $staff -> id)}}">Delete</a>
+								<a class="btn btn-sm btn-danger" href="{{route('teacher.delete', $staff -> id)}}">Delete</a>
 							</td>
 						</tr>
 						@endforeach

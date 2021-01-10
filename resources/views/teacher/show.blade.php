@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Development Area</title>
+	<title>Teacher Personal Profile</title>
 	<!-- ALL CSS FILES  -->
 	<link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
@@ -15,9 +15,9 @@
 	<div class="wrap ">
 		<div class="card shadow">
 	
-		<a class="btn btn-primary" href="{{route('staff.index')}}">Back to Table</a>
+		<a class="btn btn-primary" href="{{route('teacher.index')}}">Back to Table</a>
 			<div class="card-body">
-				<h2>Personal Profile</h2>
+				<h2>Teacher's Personal Profile</h2>
 				<table class="table table-stripe">
 				<tr>
 				<td>Name</td>
