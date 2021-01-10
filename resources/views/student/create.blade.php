@@ -13,12 +13,19 @@
 	
 
 	<div class="wrap ">
-	<a class="btn btn-primary" href="{{route('staff.index')}}">Back to Table</a>
+	<a class="btn btn-primary" href="{{route('student.index')}}">Back to Table</a>
 		<div class="card shadow">
 			<div class="card-body">
-				<h2>Add New Staff</h2>
-				@include('validation')
-				<form action="{{ route('staff.store')}}" method="POST" enctype="multipart/form-data">
+				<h2>Add New Student</h2>
+				@if($errors -> any())
+				<p class="alert alert-danger">{{$errors -> first()}}<button class="close" data-dismiss ="alert">&times;</button></p>
+				@endif
+
+				@if(Session::has('success'))
+				<p class="alert alert-success">{{Session::get('success')}}<button class="close" data-dismiss ="alert">&times;</button></p>
+				@endif
+
+				<form action="{{ route('student.store')}}" method="POST" enctype="multipart/form-data">
 				@csrf
 					<div class="form-group">
 						<label for="">Name</label>
